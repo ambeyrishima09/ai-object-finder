@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <title>AI OBJECT FINDER</title>
+    <!--  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <label class="heading_label">AI OBJECT FINDER</label>
+    <label class="heading_label_c">THE INPUT NAME WHICH YOU WILL GIVE SHOULD MATCH THE NAME PRESENT IN COCOSSD MODEL
+        THEN ONLY IT WILL DETECT</label>
+
+    <div class="object_cc">
+        <label class="a">OBJECT NAME : </label>
+        <input id="object_name_input" placeholder="ENTER THE OBJECT NAME HERE">
+        <button onclick="give_to_detection()" class="give_to_detection">START</button>
+        <br>
+        <br>
+        <label class="btn btn-warning" id="status"></label>
+        <label class="btn btn-danger" id="f_or_nf"></label>
+    </div>
+    <div class="footer_div"> Developed By - Rishima Ambey</div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
